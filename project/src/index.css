@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --purple-primary: #8B5CF6;
+  --blue-accent: #0EA5E9;
+  --orange-secondary: #F97316;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", 
+    "Segoe UI Symbol";
+}
+
+/* For the Memory card game to prevent flicker */
+.grid {
+  transform-style: preserve-3d;
+}
